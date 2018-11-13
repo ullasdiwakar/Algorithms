@@ -10,6 +10,7 @@ public class insertionSort {
 		System.out.print("Enter the number of elements need to be sorted: ");
 		int input_size = Integer.parseInt(in.nextLine());
 
+		// in.close();
 		int[] numArray = new int[input_size];
 
 		int counter = 0;
@@ -24,6 +25,7 @@ public class insertionSort {
 
 		insertionSortexecute(numArray, input_size);
 		printSortedArray(numArray, input_size);
+		printComplexity(input_size);
 
 	}
 
@@ -50,6 +52,16 @@ public class insertionSort {
 			System.out.print(numArray[i] + " ");
 		}
 
+	}
+	
+	static void printComplexity(int size) {
+		
+		System.out.println("\n\n\nTime complexity of this algorithm is:\n");
+		System.out.println("Best case: "+size);
+		System.out.println("Avergae case: "+(size*size));
+		System.out.println("Worst case: "+(size*size));
+		System.out.println("\n\nSpace complexity of this algorithm is: 1");
+		
 	}
 
 }
