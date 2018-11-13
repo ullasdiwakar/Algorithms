@@ -10,7 +10,6 @@ public class insertionSort {
 		System.out.print("Enter the number of elements need to be sorted: ");
 		int input_size = Integer.parseInt(in.nextLine());
 
-		// in.close();
 		int[] numArray = new int[input_size];
 
 		int counter = 0;
@@ -34,10 +33,10 @@ public class insertionSort {
 		int tmpNum = 0;
 
 		for (int i = 1; i < size; i++) {
-			for (int j = 0; j < i; j++) {
-				if (numArray[i] < numArray[j]) {
-					tmpNum = numArray[i];
-					numArray[i] = numArray[j];
+			for (int j = i; j >0; j--) {
+				if (numArray[j] < numArray[j-1]) {
+					tmpNum = numArray[j-1];
+					numArray[j-1] = numArray[j];
 					numArray[j] = tmpNum;
 				}
 			}
