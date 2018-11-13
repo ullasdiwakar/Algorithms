@@ -1,4 +1,4 @@
-package in.manishsingh.techpost;
+package in.manishsingh.techpost.sorting;
 
 import java.util.Scanner;
 
