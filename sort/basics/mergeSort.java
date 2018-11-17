@@ -75,7 +75,6 @@ public class mergeSort {
 
 		while (n < i) {
 			numArray[l] = tmpLeftNumArray[n];
-			;
 			n++;
 			l++;
 		}
