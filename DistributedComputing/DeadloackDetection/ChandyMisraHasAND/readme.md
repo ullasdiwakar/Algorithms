@@ -119,17 +119,17 @@ Process 9 is in a deadlock.
 
 The program has been enahnced to detect remote local deadloacks when a proble travels the graph. For eg: consider this
 
-Process 8,9 lives on site 4
-Process 7 on site 3
-Process 2,10,13,14 on site 1
-Process 4,5 on site 2
+Process 8,9 lives on site 4<br/>
+Process 7 on site 3<br/>
+Process 2,10,13,14 on site 1<br/>
+Process 4,5 on site 2<br/>
 
-Now consider this deadloac graph:
-9->7->10->2->5->4->8->9
+Now consider this deadlock graph:
+```9->7->10->2->5->4->8->9```
 
 and
 
-2->13->14->2
+```2->13->14->2```
 
 When we probe for 9, the program will detect that 9 is blocked, but while it had sent a probe to site 1, it also detected that there is a local deadlock and prints a message[4] on the site where this happens. This functionality does not hinder with the chandy-misra-hass algorithm and the probe will work as required irrespective of this detection
 
