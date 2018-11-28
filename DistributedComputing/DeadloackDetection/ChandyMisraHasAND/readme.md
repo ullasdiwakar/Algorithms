@@ -26,10 +26,10 @@ Format of cmhadd_nodes.config file:
 ```<site_id> <Ip_of_site> <port>```
 
 Eg:
-1 127.0.0.1 3450
-2 127.0.0.1 3451
-3 127.0.0.1 3452
-4 127.0.0.1 3453
+1 127.0.0.1 3450<br/>
+2 127.0.0.1 3451<br/>
+3 127.0.0.1 3452<br/>
+4 127.0.0.1 3453<br/>
 
 You can add or subtract sites from the list but the sequence numbers should be continous and no gap in site number should be there.
 
