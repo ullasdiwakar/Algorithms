@@ -23,7 +23,7 @@ This program uses Java scoket programming and threads to execute. This program w
 
 Format of cmhadd_nodes.config file:
 
-<site_id> <Ip_of_site> <port>
+```<site_id> <Ip_of_site> <port>```
 
 Eg:
 1 127.0.0.1 3450
