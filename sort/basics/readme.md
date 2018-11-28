@@ -14,6 +14,6 @@ These algorithms are written in Java and sort a **number** array in **ascending*
 ## How to run the code ##
 
 ```
-javac <filename.java>
-java filename
+javac <filename>.java
+java <filename>
 ```
