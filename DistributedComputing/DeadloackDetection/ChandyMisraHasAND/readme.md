@@ -100,9 +100,9 @@ Once all sites are up, press the process number on any site and the algorthm wil
 
 The program uses threads to handle the probe. So, on the terminal you would see all the logs printed like 
 
-//----------------------------//
+```
 
-```Enter site number (1-4): 4
+Enter site number (1-4): 4
 This site has 2 process in total. Process numbers are: 8 9
 
 
@@ -112,9 +112,9 @@ No Local deadlock detected.
 
 Enter process number for intitating deadlock check (8 9 ):
 probe,9,4,8
-Process 9 is in a deadlock.```
+Process 9 is in a deadlock.
 
-//----------------------------//
+```
 
 
 The program has been enahnced to detect remote local deadloacks when a proble travels the graph. For eg: consider this
@@ -137,13 +137,13 @@ When we probe for 9, the program will detect that 9 is blocked, but while it had
 
 Eg log:
 
-//-------------------//
+```
 
-```probe,5,7,10
+probe,5,7,10
 Sending probe: probe,5,2,5, to site 2
-A local deadlock has been detected on this site (Site Number:1)```
+A local deadlock has been detected on this site (Site Number:1)
 
-//-------------------//
+```
 
 
 ## Quiting the program ##
