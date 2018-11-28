@@ -25,7 +25,7 @@ Format of cmhadd_nodes.config file:
 
 ```<site_id> <Ip_of_site> <port>```
 
-Eg:
+Eg:<br/>
 1 127.0.0.1 3450<br/>
 2 127.0.0.1 3451<br/>
 3 127.0.0.1 3452<br/>
@@ -42,19 +42,19 @@ You can add or subtract sites from the list but the sequence numbers should be c
 
 Format of process.config file:
 
-<process_number> <site_number>
+```<process_number> <site_number>```
 
-eg:
-1,1
-2,1
-4,2
-5,2
-6,3
-7,3
-8,4
-9,4
-10,1
-11,1
+eg:<br/>
+1,1<br/>
+2,1<br/>
+4,2<br/>
+5,2<br/>
+6,3<br/>
+7,3<br/>
+8,4<br/>
+9,4<br/>
+10,1<br/>
+11,1<br/>
 
 
 ### dependency.config: ###
