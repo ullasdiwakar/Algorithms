@@ -117,14 +117,14 @@ Process 9 is in a deadlock.
 ```
 
 
-The program has been enahnced to detect remote local deadloacks when a proble travels the graph. For eg: consider this
+The program has been enahnced to detect remote local deadlocks when a proble travels the graph. For eg: consider this
 
 Process 8,9 lives on site 4<br/>
 Process 7 on site 3<br/>
 Process 2,10,13,14 on site 1<br/>
 Process 4,5 on site 2<br/>
 
-Now consider this deadlock graph:
+Now consider this deadlock graph:<br/>
 ```9->7->10->2->5->4->8->9```
 
 and
