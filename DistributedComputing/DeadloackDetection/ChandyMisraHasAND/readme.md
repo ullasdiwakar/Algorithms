@@ -1,20 +1,22 @@
-Chandy-Misra-Hass AND Algorithm
+# Chandy-Misra-Hass AND Algorithm #
 
 
 This program uses Java scoket programming and threads to execute. This program will implement Chandy-Misra-Hass AND algorithm over the network or on a local computer using different ports. The assumption here is that all ip's and ports are accessible to each node and no firewall or network partition issue occurs.
 
 
-How to give input?
+## How to give input? ##
 
 1. The program requires the follwing files
 
-	a) cmhadd_nodes.config - It contain the site number, its ip address and it's port number.
-	b) process.config - Thsi files contains the process mapping to the site. A site can have multiple processes
-	c) dependency.config - This contains the dependency of processes on each other
+	a) **cmhadd_nodes.config** - It contain the site number, its ip address and it's port number.
+	
+	b) **process.config** - Thsi files contains the process mapping to the site. A site can have multiple processes
+	
+	c) **dependency.config** - This contains the dependency of processes on each other
 
 2. All of the above files should be kept at the same level from which we are running the program (jar)
 
-cmhadd_nodes.config:-
+### cmhadd_nodes.config: ###
 
 1. The assumption here is that all sites id's would be defined sequentially, in a continous manner starting from 1
 2. Each line would contain only one site infomration
@@ -31,7 +33,7 @@ Eg:
 
 You can add or subtract sites from the list but the sequence numbers should be continous and no gap in site number should be there.
 
-process.config:-
+### process.config: ###
 
 1. Each process number should be unique
 2. Each line would contain only one process-site mapping
@@ -55,7 +57,7 @@ eg:
 11,1
 
 
-dependency.config:-
+### dependency.config: ###
 
 1. Each line would contain only one process-process mapping (WFG)
 2. Process to process mapping would be unique in the file
@@ -76,7 +78,7 @@ Eg:
 
 
 
-How to run the program?
+## How to run the program? ##
 
 This program is written in Java 1.8 (build 1.8.0_172-b11). So you would need the same JDK version as this is not tested against other JVM versions
 
@@ -99,6 +101,7 @@ Once all sites are up, press the process number on any site and the algorthm wil
 The program uses threads to handle the probe. So, on the terminal you would see all the logs printed like 
 
 //----------------------------//
+
 Enter site number (1-4): 4
 This site has 2 process in total. Process numbers are: 8 9
 
@@ -110,6 +113,7 @@ No Local deadlock detected.
 Enter process number for intitating deadlock check (8 9 ):
 probe,9,4,8
 Process 9 is in a deadlock.
+
 //----------------------------//
 
 
@@ -134,18 +138,21 @@ When we probe for 9, the program will detect that 9 is blocked, but while it had
 Eg log:
 
 //-------------------//
+
 probe,5,7,10
 Sending probe: probe,5,2,5, to site 2
 A local deadlock has been detected on this site (Site Number:1)
+
 //-------------------//
 
 
-Quiting the program:
+## Quiting the program ##
 To quit the program, simply press Ctrl+C
 
-Compiling the program:
 
-Step1: Place chandymisrahasand.java and all config files (cmhadd_nodes.config, process.config, dependency.config ) in a folder at the same level
-Step2: compile the code using: javac chandymisrahasand.java
-Step3: Run the code using: java chandymisrahasand
+## Compiling the program ##
+
+**Step1:** Place chandymisrahasand.java and all config files (cmhadd_nodes.config, process.config, dependency.config ) in a folder at the same level
+**Step2:** compile the code using: javac chandymisrahasand.java
+**Step3:** Run the code using: java chandymisrahasand
 
