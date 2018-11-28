@@ -102,7 +102,7 @@ public class quickSort {
 		System.out.println("Best case: " + (size * Math.log(size)));
 		System.out.println("Avergae case: " + (size * Math.log(size)));
 		System.out.println("Worst case: " + (size * size));
-		System.out.println("\n\nSpace complexity of this algorithm is: 1");
+		System.out.println("\n\nSpace complexity of this algorithm is: "+Math.log(size));
 
 	}
 
