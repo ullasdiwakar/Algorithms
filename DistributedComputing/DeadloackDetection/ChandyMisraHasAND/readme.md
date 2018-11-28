@@ -66,7 +66,7 @@ eg:
 
 Format of dependency.config file:
 
-<from_process_no> <to_process_number>
+```<from_process_no> <to_process_number>```
 
 Eg:
 
@@ -84,15 +84,15 @@ This program is written in Java 1.8 (build 1.8.0_172-b11). So you would need the
 
 To start the program, simply type [0] from the location where the jar and config files is placed. Both the jar and config files should be placed at the same level.
 
-[0] java -jar chandymisrahas_and.jar
+[0] ```java -jar chandymisrahas_and.jar```
 
 Once the program starts, it will ask the site number like[1]:
 
-[1] Enter site number (1-4):
+[1] ```Enter site number (1-4):```
 
 Enter the site  number. Once entered. It will give the prompt [2]
 
-[2] Enter process number for intitating deadlock check (<all process numbers beloging to that site>)
+[2] ```Enter process number for intitating deadlock check (<all process numbers belonging to that site>)```
 
 Before entering a process number please ensure all sites are initialized (by running jar on each computer or prompt (eg: 4 cmd prompts for 4 sites on the same computer)). This program assumes that all sites are up and running all the time. If you get any exception while initializing the program, simply quit the program and restart it.
 
@@ -102,7 +102,7 @@ The program uses threads to handle the probe. So, on the terminal you would see 
 
 //----------------------------//
 
-Enter site number (1-4): 4
+```Enter site number (1-4): 4
 This site has 2 process in total. Process numbers are: 8 9
 
 
@@ -112,7 +112,7 @@ No Local deadlock detected.
 
 Enter process number for intitating deadlock check (8 9 ):
 probe,9,4,8
-Process 9 is in a deadlock.
+Process 9 is in a deadlock.```
 
 //----------------------------//
 
@@ -133,15 +133,15 @@ and
 
 When we probe for 9, the program will detect that 9 is blocked, but while it had sent a probe to site 1, it also detected that there is a local deadlock and prints a message[4] on the site where this happens. This functionality does not hinder with the chandy-misra-hass algorithm and the probe will work as required irrespective of this detection
 
-[4] A local deadlock has been detected on this site (Site Number:1)
+[4] ```A local deadlock has been detected on this site (Site Number:1)```
 
 Eg log:
 
 //-------------------//
 
-probe,5,7,10
+```probe,5,7,10
 Sending probe: probe,5,2,5, to site 2
-A local deadlock has been detected on this site (Site Number:1)
+A local deadlock has been detected on this site (Site Number:1)```
 
 //-------------------//
 
@@ -153,6 +153,8 @@ To quit the program, simply press Ctrl+C
 ## Compiling the program ##
 
 **Step1:** Place chandymisrahasand.java and all config files (cmhadd_nodes.config, process.config, dependency.config ) in a folder at the same level
+
 **Step2:** compile the code using: javac chandymisrahasand.java
+
 **Step3:** Run the code using: java chandymisrahasand
 
