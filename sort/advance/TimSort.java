@@ -72,7 +72,6 @@ public class TimSort {
 			int[] tmpRightArray = null;
 			int sizeLeftArray = 0, sizeRightArray = 0;
 			int numArrayPointer = 0;
-			;
 			int leftBlock = 0, rightBlock = 0;
 
 			for (int g = 1; g <= blocks; g++) {
