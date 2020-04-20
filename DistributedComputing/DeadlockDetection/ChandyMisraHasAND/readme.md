@@ -42,7 +42,7 @@ You can add or subtract sites from the list but the sequence numbers should be c
 
 Format of process.config file:
 
-```<process_number> <site_number>```
+```<process_number>,<site_number>```
 
 eg:<br/>
 1,1<br/>
@@ -66,7 +66,7 @@ eg:<br/>
 
 Format of dependency.config file:
 
-```<from_process_no> <to_process_number>```
+```<from_process_no>,<to_process_number>```
 
 Eg:
 
