@@ -70,11 +70,11 @@ Format of dependency.config file:
 
 Eg:
 
-5,4
-4,8
-8,9
-9,7
-7,10
+5,4<br/>
+4,8<br/>
+8,9<br/>
+9,7<br/>
+7,10<br/>
 
 
 
